@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Button from '@/components/Button';
 import ChatInput from '@/components/ChatInput';
 
+import companyLogo from './company_logo.png';
 import { Container, Watermark } from './styled';
 
 export interface FooterProps {
@@ -44,13 +45,13 @@ const Footer: React.FC<FooterProps> = ({ withWatermark, hasEnded, onStart, onSen
         <Button onClick={onStart}>Start New Chat</Button>
       ) : (
         // eslint-disable-next-line jsx-a11y/no-autofocus
-        <ChatInput value={message} placeholder="Message…" autoFocus onValueChange={setMessage} onSend={handleSend} />
+        <ChatInput value={message} placeholder="Mensagem…" autoFocus onValueChange={setMessage} onSend={handleSend} />
       )}
       {withWatermark && (
         <Watermark>
-          Assistant ⚡️ by
-          <a target="_blank" href="https://voiceflow.com" rel="noreferrer">
-            Voiceflow
+          Powered by
+          <a target="_blank" href="http://automy.ai/smartchat/" rel="noreferrer">
+            <img className="company_logo" src={companyLogo} alt="logo" />
           </a>
         </Watermark>
       )}

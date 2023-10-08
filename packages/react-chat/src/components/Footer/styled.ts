@@ -44,7 +44,10 @@ export const Watermark = styled(tag('aside', 'watermark'), {
     marginLeft: '0.5ch',
     textDecoration: 'none',
     color: '$blue',
-
+    '.company_logo': {
+      height: '16px',
+      marginTop: '5px',
+    },
     '&:focus': {
       outline: 0,
     },

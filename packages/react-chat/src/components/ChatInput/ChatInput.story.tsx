@@ -20,5 +20,5 @@ export const Default = Template.bind({});
 
 export const Placeholder = Template.bind({});
 Placeholder.args = {
-  placeholder: 'Message…',
+  placeholder: 'Mensagem…',
 };
