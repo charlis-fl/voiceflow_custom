@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Button from '@/components/Button';
 import ChatInput from '@/components/ChatInput';
 
-import companyLogo from './company_logo.png';
+import companyLogo from './company_logo.jpg';
 import { Container, Watermark } from './styled';
 
 export interface FooterProps {
