@@ -16,7 +16,7 @@ export const Button = styled(tag('button'), {
   width: '$xl',
   border: '1px solid $shadow4',
   boxShadow: '0 1px 6px $shadow6, 0 2px 24px $shadow8',
-
+  position: 'relative',
   '&:focus': {
     outline: 0,
   },
@@ -24,7 +24,17 @@ export const Button = styled(tag('button'), {
     cursor: 'pointer',
     backgroundColor: '$darkPrimary',
   },
-
+ '&::after': {
+    content: '',
+    display: 'block',
+    height: '12px',
+    width: '12px',
+    borderRadius: '50%',
+    background: '#00FF00',
+    position: 'absolute',
+    right: '2px',
+    bottom: '2px',
+  },
   '& > img': {
     width: '$sm',
     height: '$sm',
